@@ -1,1 +1,44 @@
+<body>
+    <div class="background">
+        <div class="inner-content">
+            <div class="heading">
+                Summer Vacation
+            </div>
+            <div class="subheading">
+                Discover this summer!
+            </div>
+        </div>
+    </div>
 
+<style>
+        .background{
+            background-size: contain;
+            width:auto;
+            height:100vh;
+            background-repeat: no-repeat;
+            position: relative;
+            background: url("background.jpg");
+            
+        }
+
+        .inner-content:hover{
+            transform: rotate(360deg);
+        }
+
+        .inner-content{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color:white;
+            position: relative;
+            z-index:999;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .subheading,.heading{
+            font-size: 30px !important;
+            font-family: 'Lucida Sans', Arial, sans-serif !important;
+            color:aliceblue !important;
+            transition: width 2ms ;
+        }
+    </style>
